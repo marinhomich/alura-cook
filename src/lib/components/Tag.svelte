@@ -1,5 +1,6 @@
 <script>
-    export let ativa = false
+    export let ativa = false;
+
 </script>
 
 <div class="tag" class:ativa>

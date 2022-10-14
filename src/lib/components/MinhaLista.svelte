@@ -5,7 +5,7 @@
 </script>
 
 <section class="minha-lista">
-    <h2>Sua Lista: Michel Marinho</h2>
+    <h2>Sua Lista:</h2>
     <ul class="meus-ingredientes">
         {#each ingredientes as ingrediente (ingrediente)}
         <li>
