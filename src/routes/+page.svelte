@@ -2,6 +2,7 @@
     import '../app.css';
     import Cabecalho from "../lib/components/Cabecalho.svelte";
     import MinhaLista from "../lib/components/MinhaLista.svelte";
+    import Titulo from "../lib/components/Titulo.svelte";
 </script>
 
 <svelte:head>
@@ -15,7 +16,17 @@
     <div class="estilo-principal">
         <div class="minha-lista-container">
             <MinhaLista />
+
+            <div class="divisoria"></div>
         </div>
+        <main>
+            <Titulo tag="h1">Ingredientes</Titulo>
+
+            <div class="info">
+                <p>Selecione abaixo os ingredientes que você deseja usar nesta refeição:</p>
+                <p>*Atenção: consideramos que você tenha em casa sal, pimenta e água.</p>
+            </div>
+        </main>
     </div>
 </div>
 
@@ -34,5 +45,19 @@
 
     .minha-lista-container {
         margin-bottom: 2rem;
+    }
+    .divisoria {
+        width: 40vw;
+        height: 2px;
+        background-color: var(--verde);
+        margin: 0 auto;
+    }
+
+    .info {
+        margin-bottom: 3.375rem;
+    }
+
+    .info > p {
+        line-height: 2rem;
     }
 </style>

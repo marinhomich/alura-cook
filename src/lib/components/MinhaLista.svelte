@@ -1,11 +1,18 @@
+<script>
+    import Tag from "./Tag.svelte";
+
+    let ingredientes = ['Alho', 'Manteiga', 'Ovos']
+</script>
+
 <section class="minha-lista">
     <h2>Sua Lista</h2>
 
     <ul class="meus-ingredientes">
-        <li>Alho</li>
-        <li>Manteiga</li>
-        <li>Ovos</li>
-
+        {#each ingredientes as ingrediente (ingrediente)}
+        <li>
+            <Tag ativa={true}>{ingrediente}</Tag>
+        </li>
+        {/each}
     </ul>
 </section>
 
