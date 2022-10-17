@@ -1,5 +1,5 @@
 <footer>
-    <img src="/icones/registered.png" alt="Icone Marca Registrada" class="registered">
+    <img alt="Icone Marca Registrada" class="registered" src="/icones/registered.png">
     Copyright Alura Cook - 2022
 </footer>
 

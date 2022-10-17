@@ -1,5 +1,5 @@
 <header>
-    <img src="/imagens/alura-cook-logo.svg" alt="Logo do Alura Cook">
+    <img alt="Logo do Alura Cook" src="/imagens/alura-cook-logo.svg">
 </header>
 
 <style>
