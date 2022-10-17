@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Tag from "../../compartilhados/Tag.svelte";
     import {minhaLista} from "../../../stores/minhaLista.js";
+    import MeuIngrediente from "./MeuIngrediente.svelte";
 
 </script>
 
@@ -9,7 +9,7 @@
     <ul class="meus-ingredientes">
         {#each $minhaLista as ingrediente (ingrediente)}
             <li>
-                <Tag ativa={true}>{ingrediente}</Tag>
+               <MeuIngrediente {ingrediente}/>
             </li>
         {/each}
     </ul>
