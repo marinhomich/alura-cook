@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
     export let ativa = false;
-
+    export let tamanho: "md" | "lg" = "md";
 </script>
 
-<div class="tag" class:ativa>
+<div class="tag {tamanho}" class:ativa>
     <slot>
     </slot>
 </div>
@@ -25,5 +25,10 @@
     .ativa{
         color: var(--branco);
         background-color: var(--laranja);
+    }
+
+    .lg{
+        font-size: 1.25rem;
+        padding: 1rem 1.5rem;
     }
 </style>
