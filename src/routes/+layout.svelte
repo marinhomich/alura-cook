@@ -1,4 +1,7 @@
 <script lang="ts">
+    import '../app.css';
+
+
     import Cabecalho from "../lib/components/paginas/layout/Cabecalho.svelte";
     import Rodape from "../lib/components/paginas/layout/Rodape.svelte";
     import {minhaLista} from "../lib/stores/minhaLista.js";
